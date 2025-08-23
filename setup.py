@@ -12,7 +12,7 @@ setup(
     author_email='ywang050@uottawa.ca',
     license='MIT',
     description='Tools to help automate survival ML model selection & optimization',
-    long_description=open('README.txt').read(),
+    long_description=open('README.md').read(),
 
     packages = ['OptimizeSurvML'],
 
