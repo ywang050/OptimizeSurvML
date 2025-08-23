@@ -1,1 +1,1 @@
-from . import SurvivalModelSelection
+from .SurvivalModelSelection import test
