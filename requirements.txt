@@ -1,9 +1,9 @@
 numpy 
 pandas
 optuna
-sklearn
+scikit-learn
 statistics
 torch
 pycox
-sksurv
+scikit-survival
 scipy
