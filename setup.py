@@ -5,6 +5,12 @@ setup(
     url='https://github.com/ywang050/OptimizeSurvML',
     author='Yifan Wang',
     author_email='ywang050@uottawa.ca',
+    license='MIT',
+    description='Tools to help automate survival ML model selection & optimization',
+    long_description=open('README.txt').read(),
+
+    packages = ['OptimizeSurvML'],
 
     install_requires = requirements
+
 )
