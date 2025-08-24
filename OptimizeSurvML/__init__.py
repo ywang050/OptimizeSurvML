@@ -1,1 +1,3 @@
-from .SurvivalModelSelection import test
+from .selection import SurvivalModelSelection
+
+__all__ = ["SurvivalModelSelection"]
