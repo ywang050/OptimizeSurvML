@@ -1,3 +1,3 @@
-from .selection import SurvivalModelSelection
+from OptimizeSurvML.selection import SurvivalModelSelection
 
 __all__ = ["SurvivalModelSelection"]
