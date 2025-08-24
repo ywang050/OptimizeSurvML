@@ -14,7 +14,7 @@ setup(
     description='Tools to help automate survival ML model selection & optimization',
     long_description=open('README.md').read(),
 
-    packages = find_packages(),
+    packages = ['OptimizeSurvML'],
 
     install_requires = requirements
 
