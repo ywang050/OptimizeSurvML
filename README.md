@@ -3,10 +3,10 @@
 This class will automatically perform efficient hyperparameter tuning using nested CV and Optuna to assist with model selection. Following model-selection, more extensive hyperparameter tuning can be performed using non-nested CV.
 
 The following models are supported:
-* Random Survival Forest (run_rsf_nested_cv)
-* Gradient Boosting Machine Survival Analysis (run_gbm_nested_cv)
-* Support Vector Machine Survival analysis (run_svm_nested_cv)
-* DeepSurv (run_deepsurv_nested_cv)
+* Random Survival Forest (```run_rsf_nested_cv```)
+* Gradient Boosting Machine Survival Analysis (```run_gbm_nested_cv```)
+* Support Vector Machine Survival analysis (```run_svm_nested_cv```)
+* DeepSurv (```run_deepsurv_nested_cv```)
 
 ## Getting started
 Installation:
@@ -38,20 +38,20 @@ class OptimizeSurvML.selection.SurvivalModelSelection(x_data, y_data, n_outer_fo
                   random_state=17, logging = False, logging_loc = "surv_model_selection.db")
 ```
 ### Parameters:
-* x_data: X data. (pandas.DataFrame)
+* ```x_data```: X data. (pandas.DataFrame)
   * Should be imputed, one-hot-encoded, and normalized
-* y_data: Survival labels (pandas.DataFrame)
+* ```y_data```: Survival labels (pandas.DataFrame)
   * Should contain events in column 1 and time in column 2
-* n_outer_folds : Number of outer CV folds (default: 5) (int)
-* n_inner_folds: Number of inner CV folds for hyperparameter tuning (default: 5) (int)
-* random_state (int)
-* logging: whether to store the results of Optuna optimization studies (bool) - see [Optuna documentation](https://optuna-dashboard.readthedocs.io/en/latest/getting-started.html)
-* logging_loc: location for logging database (str)
+* ```n_outer_folds```: Number of outer CV folds (default: 5) (int)
+* ```n_inner_folds```: Number of inner CV folds for hyperparameter tuning (default: 5) (int)
+* ```random_state```: Random state for CV (int)
+* ```logging```: whether to store the results of Optuna optimization studies (bool) - see [Optuna documentation](https://optuna-dashboard.readthedocs.io/en/latest/getting-started.html)
+* ```logging_loc```: location for logging database (str)
 
 ### Functions:
 Shared parameters:
-* n_trials: the number of hyperparameter combinations to try within each inner CV fold. (int)
-* n_jobs: number of CPU threads to use for model training. Defaults to using all cores (-1)
+* ```n_trials```: the number of hyperparameter combinations to try within each inner CV fold. (int)
+* ```n_jobs```: number of CPU threads to use for model training. Defaults to using all cores (-1)
 * The remaining parameters enable customization of the hyperparameter search space. Can usually be left to default values.
 
 All functions return a DataFrame containing the following metrics for each outer CV fold:
