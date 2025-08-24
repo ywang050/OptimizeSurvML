@@ -45,7 +45,7 @@ class OptimizeSurvML.selection.SurvivalModelSelection(x_data, y_data, n_outer_fo
 * n_outer_folds : Number of outer CV folds (default: 5) (int)
 * n_inner_folds: Number of inner CV folds for hyperparameter tuning (default: 5) (int)
 * random_state (int)
-* logging: whether to store the results of Optuna optimization studies(bool)
+* logging: whether to store the results of Optuna optimization studies (bool) - see [Optuna documentation](https://optuna-dashboard.readthedocs.io/en/latest/getting-started.html)
 * logging_loc: location for logging database (str)
 
 ### Functions:
