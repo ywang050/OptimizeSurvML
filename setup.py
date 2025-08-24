@@ -6,7 +6,7 @@ with open('requirements.txt') as f:
 setup(
     name='OptimizeSurvML',
     version=0.1,
-    include_package_data = True
+    include_package_data = True,
 
     url='https://github.com/ywang050/OptimizeSurvML',
     author='Yifan Wang',
