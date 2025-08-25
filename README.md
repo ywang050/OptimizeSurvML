@@ -1,6 +1,6 @@
 # OptimizeSurvML
 
-This class will automatically perform efficient hyperparameter tuning using nested CV and Optuna to assist with model selection. Following model-selection, more extensive hyperparameter tuning can be performed using non-nested CV.
+This class will automatically perform efficient hyperparameter tuning using nested CV and Optuna to assist with model selection for survival models. Following model-selection, more extensive hyperparameter tuning can be performed using non-nested CV.
 
 The following models are supported:
 * Random Survival Forest (```run_rsf_nested_cv```)
